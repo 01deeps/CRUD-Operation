@@ -2,7 +2,7 @@
 import { Request, Response } from 'express';
 import Event from '../models/Event';
 
-class EventController {
+class EventService {
 
   // Function to create new event
   public async createEvent(req: Request, res: Response): Promise<void> {
@@ -95,4 +95,4 @@ class EventController {
   }
 }
 
-export default new EventController();
+export default new EventService();
